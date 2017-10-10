@@ -18,7 +18,7 @@ class Bullet: NSObject{
     var y: CGFloat!
 
     
-    init(imageName: String = "bullet_1_1.png", width: CGFloat = 20, height: CGFloat = 40, ySpeed: CGFloat = 10){
+    init(imageName: String = "enemy_1_1.png", width: CGFloat = 20, height: CGFloat = 40, ySpeed: CGFloat = -5){
         self.width = width
         self.height = height
         self.imageName = imageName
@@ -31,7 +31,7 @@ class Bullet: NSObject{
     }
     
     func move(){
-        y = y - ySpeed
+        y = y + ySpeed
     }
     
 }
